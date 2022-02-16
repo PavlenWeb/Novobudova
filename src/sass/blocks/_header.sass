@@ -2,6 +2,11 @@ header
     position: top
     margin: 0
     padding: 0
+    display: block
+#top_nav
+    position: fixed
+    top: 35px
+    z-index: 1000
 .toppanel
     height: 35px
     width: 100%
@@ -60,9 +65,7 @@ header
     align-items: center
     justify-content: center
     background: #388BE1
-    position: -webkit-sticky
-    position: sticky
-    top: 35px
+    position: static
     &__logo
         height: 100px
         width: 100px
