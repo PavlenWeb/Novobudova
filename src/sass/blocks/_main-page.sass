@@ -1,21 +1,152 @@
 .main-page
     background: url(../img/bg/bg_01.png) center (center / cover) no-repeat
-    height: 100vh
+    height: calc( 100vh -  145px)
     width: 100%
     position: relative
     &__panel
-        vertical-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 20%
+        
+    &__title
+        display: block
+        text-align: center
+        font-family: B612
+        font-style: normal
+        font-weight: bold-italic
+        font-size: 42px
+        line-height: 48px
+        text-align: center
+        color: #000000
+        mix-blend-mode: normal
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    // Right panel news
+    &__news
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 10%
+        &-wrapped   
+            background: rgba(255, 255, 255, 0.79)
+            border-radius: 55px
+            height: 600px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 10px 30px
+        h2
+            font-family: Cabin
+            font-style: italic
+            font-weight: bold
+            font-size: 36px
+            line-height: 44px
+            color: rgba(28, 26, 26, 0.87)
+            mix-blend-mode: normal
+        .item
+            width: 100%
+            margin-top: 25px
+            height: 98px
+            border-bottom: 1px solid #9D9D9D
+            .news-title
+                font-family: B612
+                font-style: normal
+                font-weight: bold
+                font-size: 26px
+                line-height: 33px
+                color: #011E4A
+                &:hover
+                    color: #3d0af5
+                    cursor: pointer
+            &__dow-panel
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .news-date
+                    font-family: Cantata One
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 26px
+                    line-height: 30px
+                    color: rgb(39, 39, 39)
+                .news-btn
+                    font-family: B612
+                    border: none
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 25px
+                    line-height: 30px
+                    color: #5A5D62
+                    &:hover
+                        color: #2436FF
+                        cursor: pointer
+.btn-main    
+    height: 40px
+    width: 250px
+    border: none
+    background: linear-gradient(88.07deg, #007CFF 0%, #0016FF 100%)
+    margin-top: 25px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    text-align: center
+    text-decoration: none
+    font-family: B612
+    font-style: normal
+    font-weight: bold
+    font-size: 23px
+    line-height: 41px
+    color: #FFFFFF
+    &:hover
+        height: 45px
+        width: 255px
+        font-size: 25px
+        line-height: 45px
+        cursor: pointer
+.bc-green
+    margin-top: 5%
+    background: #38BB0A
 
-.prosto
-    padding-top: 110px 
-    display: block
-    margin: 0 auto
-
-.container
-    width: 1170px
-    margin: 0 auto
 .wrapped
-    padding-top: 25%
     display: grid
     grid-template-columns: 50% 50%
-    grid-template-rows: 500px
+    grid-template-rows: 100%
+.arrow-down 
+    margin: 30px
+.down-line-wrapped
+    display: block
+    width: 50px
+    height: 50px
+    margin: 0 auto
+
+
+.arrow-down span 
+    display: block
+    width: 40px
+    height: 40px
+    border-bottom: 4px solid #337AB7
+    border-right: 4px solid #337AB7
+    transform: rotate(45deg)
+    margin: -16px
+    animation: arrow-down 3s infinite
+
+.arrow-down span:nth-child(2)
+    animation-delay: -0.3s
+
+.arrow-down span:nth-child(3)
+    animation-delay: -0.5s
+
+@keyframes arrow-down 
+    0%
+        opacity: 0
+        transform: rotate(45deg) translate(-20px,-20px)
+    
+    50%
+        opacity: 1
+    
+    100%
+        opacity: 0
+        transform: rotate(45deg) translate(20px,20px)
+    
+
+   

@@ -113,20 +113,70 @@
 <body>
     <section class="main-page">
         <div class="container">
+            <!-- Flex wrapped front -->
             <div class="wrapped">
+                <!-- Left panel wellcome and 3 button -->
                 <div class="main-page__panel">
-                    <div class="btn-main"><a href="#">Особистий кабінет</a></div>
-                    <div class="btn-main"><a href="#">Контакти</a></div>
-                    <div class="btn-main"><a href="#">Новини</a></div>
+                    <h1 class="main-page__title">Вітаємо на сайті <br> ТОВ "Новобудова"</h1>
+                    <form action="#"><button class="btn-main bc-green">Особистий кабінет</button></form>
+                    <form action="#"><button class="btn-main">Оплата PORTMONE</button></form>
+                    <form action="#"><button class="btn-main">Новини</button></form>
                 </div>
+                <!-- Right panel news -->
                 <div class="main-page__news">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <!-- news content -->
+                    <div class="main-page__news-wrapped">
+                        <h2>Останні новини</h2>
+                        <!-- New post 1 -->
+                        <div class="item">
+                            <span class="news-title">Про проведення прийому громадян 08.02 та 09.02 з особистих питань...</span>
+                            <div class="item__dow-panel">
+                                <span class="news-date">05.02.2022</span>
+                                <form action="#"><button class="news-btn">Детальніше</button></form>
+                            </div>  
+                        </div>
+                        <!-- New post 2 -->
+                        <div class="item">
+                            <span class="news-title">Увага! Підвищення вартості послуг по житловим будинкам за адресами...</span>
+                            <div class="item__dow-panel">
+                                <span class="news-date">05.02.2022</span>
+                                <form action="#"><button class="news-btn">Детальніше</button></form>
+                            </div>  
+                        </div>
+                        <!-- New post 3 -->
+                        <div class="item">
+                            <span class="news-title">Звертаємо увагу! Про зарахування оплати в квитанціях за грудень...</span>
+                            <div class="item__dow-panel">
+                                <span class="news-date">22.01.2022</span>
+                                <form action="#"><button class="news-btn">Детальніше</button></form>
+                            </div>  
+                        </div>
+                        <!-- New post 4 -->
+                        <div class="item">
+                            <span class="news-title">ПриватБанк вніс зміни в систему оплат за послугу з управління та...</span>
+                            <div class="item__dow-panel">
+                                <span class="news-date">07.01.2022</span>
+                                <form action="#"><button class="news-btn">Детальніше</button></form>
+                            </div>  
+                        </div>
+
+                    </div>
                 </div>
             </div>
+            <!-- Down svg -->
+            <form class="down-line-wrapped" >
+                    <div action="google.com" class="arrow-down">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            </form>
         </div>
+
     </section>
+    <div class="container">
+        
+    </div>
     
 </body>
 
@@ -152,7 +202,6 @@
                 elem.css('top', h_mrg);
             }
         });
-     11
     });
 </script>
 
