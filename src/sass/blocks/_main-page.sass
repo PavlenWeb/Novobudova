@@ -1,0 +1,114 @@
+.main-page
+    background: url(../img/bg/bg_01.png) center (center / cover) no-repeat
+    height: calc( 100vh -  145px)
+    width: 100%
+    position: relative
+    &__panel
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 20%
+        
+    &__title
+        display: block
+        text-align: center
+        font-family: B612
+        font-style: normal
+        font-weight: bold-italic
+        font-size: 42px
+        line-height: 48px
+        text-align: center
+        color: #000000
+        mix-blend-mode: normal
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    // Right panel news
+    &__news
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 10%
+        &-wrapped   
+            background: rgba(255, 255, 255, 0.79)
+            border-radius: 55px
+            height: 600px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 10px 30px
+        h2
+            font-family: Cabin
+            font-style: italic
+            font-weight: bold
+            font-size: 36px
+            line-height: 44px
+            color: rgba(28, 26, 26, 0.87)
+            mix-blend-mode: normal
+        .item
+            width: 100%
+            margin-top: 25px
+            height: 98px
+            border-bottom: 1px solid #9D9D9D
+            .news-title
+                font-family: B612
+                font-style: normal
+                font-weight: bold
+                font-size: 26px
+                line-height: 33px
+                color: #011E4A
+                &:hover
+                    color: #3d0af5
+                    cursor: pointer
+            &__dow-panel
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .news-date
+                    font-family: Cantata One
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 26px
+                    line-height: 30px
+                    color: #5A5D62
+                .news-btn
+                    font-family: B612
+                    border: none
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 25px
+                    line-height: 30px
+                    color: #5A5D62
+                    background-color: transparent
+                    &:hover
+                        color: #2436FF
+                        cursor: pointer
+.btn-main    
+    height: 40px
+    width: 250px
+    border: none
+    background: linear-gradient(88.07deg, #007CFF 0%, #0016FF 100%)
+    margin-top: 25px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    text-align: center
+    text-decoration: none
+    font-family: B612
+    font-style: normal
+    font-weight: bold
+    font-size: 23px
+    line-height: 41px
+    color: #FFFFFF
+    &:hover
+        height: 45px
+        width: 255px
+        font-size: 25px
+        line-height: 45px
+        cursor: pointer
+.bc-green
+    margin-top: 5%
+    background: #38BB0A
+
+.wrapped
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: 100%
