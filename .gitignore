@@ -4,3 +4,10 @@ node_modules
 node_modules
 node_modules
 >>>>>>> Vetka
+node_modules
+.vscode
+dist
+gulpfile.js
+package.json
+package-lock.json
+README.md
