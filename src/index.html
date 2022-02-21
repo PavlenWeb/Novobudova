@@ -47,15 +47,17 @@
 
 
     <!-- Styles and fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <header>
@@ -273,32 +275,56 @@
             </div>
         </div>
     </section>
+    <section class="achievement">
+        <div class="container">
+            <h1 class="achievement__title">Наші досягнення</h1>
+            <!-- Slider -->
+            <div class="achievement__slider">
+                <div>
+                    <img src="img/achievement/sert_01.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_02.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_03.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_04.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_05.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_06.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_07.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_08.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_09.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_10.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_11.jpg" alt="sertifikat_01">
+                </div>
+                <div>
+                    <img src="img/achievement/sert_12.jpg" alt="sertifikat_01">
+                </div>
+             </div>
+        </div>
+    </section>
+
     
 </body>
-
-<script>
-    var h_hght = 35; // высота шапки
-    var h_mrg = 0;    // отступ когда шапка уже не видна
-                     
-    $(function(){
-     
-        const elem = $('#top_nav');
-        var top = $(this).scrollTop();
-         
-        if(top > h_hght){
-            elem.css('top', h_mrg);
-        }           
-         
-        $(window).scroll(function(){
-            top = $(this).scrollTop();
-             
-            if (top+h_mrg < h_hght) {
-                elem.css('top', (h_hght-top));
-            } else {
-                elem.css('top', h_mrg);
-            }
-        });
-    });
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 </html>

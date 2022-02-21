@@ -1,0 +1,66 @@
+.achievement
+    position: relative
+    // height: calc(100vh - 110px)
+    max-height: 100%
+    padding-top: 30px
+    padding-bottom: 30px
+    background: #E5F0F6
+    &__slider
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 650px
+        height: 600px
+        padding-top: 30px
+        margin: 0 auto
+        img
+            width: 387px
+            margin: 0 auto
+        &-text
+            font-family: B612
+            font-style: normal
+            font-weight: bold
+            font-size: 15px
+            line-height: 18px
+            text-align: center
+            color: #565454
+            margin-top: 20px
+            max-height: 55px
+            width: 100%        
+    .slick-slide
+        margin: 0 50px 0 50px
+        max-height: 100%
+        margin-top: 15px
+    .slick-prev, .slick-next
+        &:before
+            content: '' 
+        img
+            height: 70px
+            width: 70px
+    .slick-prev
+        left: -70px
+    .slick-dots
+        display: flex
+        justify-content: center
+        align-items: center
+        bottom: -40px 
+        li
+            width: 15px
+            height: 15px
+            background: #22254F
+            border-radius: 50% 
+            transition: 1s
+            button
+                &:before
+                    font-size: 0
+                    border: none
+                    content: ''
+        .slick-active
+            transform: 2s
+            width: 20px
+            height: 20px
+            background-color: #FF8B02
+            
+
+     
+   
