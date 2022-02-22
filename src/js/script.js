@@ -22,6 +22,16 @@ var h_mrg = 0;    // отступ когда шапка уже не видна
         });
     });
 
+    // Slow scrol
+jQuery(document).ready(function() {
+    jQuery("a.scrollto").click(function () {
+    elementClick = jQuery(this).attr("href")
+    destination = jQuery(elementClick).offset().top - 145;
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+    return false;
+    });
+    });
+
 // Slider
 $(document).ready(function(){
     $('.achievement__slider').slick({
